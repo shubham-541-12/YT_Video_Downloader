@@ -1,0 +1,164 @@
+@media (max-width: 600px) {
+  .Button-Container {
+    flex-direction: column; /* Stacks buttons vertically */
+    gap: 20px; /* Adjusts the spacing between buttons */
+  }
+  .custom-button, .custom-button2 {
+    width: 300px; /* Maintains fixed width */
+    max-width: 100%; /* Ensures no overflow on very small screens */
+  }
+}
+body {
+  background-image: url('original.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-color: #aaddcc;
+}
+h1{
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 50px;
+    padding: 30px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+    align-items: center;
+    margin-top: 200px;
+    position: relative;
+}
+h3{
+  color: white;
+  text-align: center;
+}
+.Button-Container{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items:center;
+    margin-top:-10px;
+    min-height: 30vh;
+    position: relative;
+}
+.custom-button,.custom-button2 {
+  background: rgba(218, 46, 46, 0.897);
+  border-radius: 20px;
+  width: 300px;
+  padding: 40px 20px 20px 20px;
+  box-shadow: 0 6px 30px rgba(22, 20, 31, 0.24);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.custom-button:hover,.custom-button2:hover{
+  transform: translateY(-9px) scale(1.04);
+  box-shadow: 0 12px 36px rgba(22, 20, 31, 0.34);
+}
+.single-video::before {
+  font-size: 2.2em;
+}
+.playlist::before {
+  font-size: 2.2em;
+}
+.title,.title2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-size: 1em;
+  color: #ddd;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5px;
+  min-width: 6px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.icon-image{
+  width: 60px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+/* This Session is for Dialog box of single video */
+.modal,.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content,.modal-content2{
+  background: #222048;
+  color: #fff;
+  margin: auto;
+  padding: 40px;
+  border-radius: 16px;
+  width: 360px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.20);
+}
+
+.close,.close2{
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+.download-type-group {
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+
+.download-type-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.video-download-btn,.playlist-download-btn{
+  background: #7d46ce;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1.1em;
+  margin-top: 16px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.video-download-btn:enabled ,.playlist-download-btn:enabled{
+  opacity: 1;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  background: #29275a;
+  color: #fff;
+}

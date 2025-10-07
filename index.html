@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900;1200;2000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h1>Free Youtube Videos Downloader</h1>
+        <h3>Download Your Favourite Video And Playlist Instantly</Video></h3>
+    </div>
+    <!-- This Session is for button -->
+    <div class="Button-Container">
+        <div class="custom-button" id="video">
+            <div class="icon">
+                <img src="video.png" class="icon-image" alt="Video-Icon">
+            </div>
+            <div class="title">Single Video</div>
+            <div class="subtitle">Download any YouTube video in high quality</div>
+        </div>
+
+        <div class="custom-button2" id="playlist">
+            <div class="icon">
+                <img src="playlist.png" class="icon-image" alt="playlist-Icon">
+            </div>
+            <div class="title2">Playlist</div>
+            <div class="subtitle">Download entire YouTube playlists at once</div>
+        </div>
+    </div>
+
+    <!-- This session is for single video dialogbox -->
+    <div id="singleVideoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Download Video</h2>
+            <p>Paste your YouTube video URL below</p>
+            <label for="youtubeURL">YouTube URL</label>
+            <input type="text" id="youtubeURL" placeholder="https://www.youtube.com/watch?v=...">
+
+            <div class="download-type-group">
+                <label>Download Type</label>
+                <div>
+                    <input type="radio" id="audioOnly" name="downloadType" value="audio" checked>
+                    <label for="audioOnly">Audio Only</label>
+                </div>
+                <div>
+                    <input type="radio" id="videoOnly" name="downloadType" value="video">
+                    <label for="videoOnly">Video</label>
+                </div>
+            </div>
+
+            <!-- Quality selection goes HERE, still inside .modal-content -->
+            <div class="quality-group" id="qualityGroup" style="display:none; margin-bottom:18px;">
+                <label for="videoQuality">Quality</label>
+                <select id="videoQuality">
+                    <option value="1080p">1080p (Full HD)</option>
+                    <option value="720p">720p (HD)</option>
+                    <option value="480p">480p</option>
+                    <option value="360p">360p</option>
+                    <option value="240p">240p</option>
+                    <option value="144p">144p</option>
+                </select>
+            </div>
+            <button class="video-download-btn" disabled>Download</button>
+        </div>
+    </div>
+
+    <!-- This Session is for playlist dialogbox -->
+     <div id="PlaylistVideoModal" class="modal2">
+        <div class="modal-content2">
+            <span class="close" id="closeModalBtn2">&times;</span>
+            <h2>Download Playlist</h2>
+            <p>Paste your YouTube Playlist URL below</p>
+            <label for="youtubeURL">YouTube URL</label>
+            <input type="text" id="youtubeURL2" placeholder="https://www.youtube.com/watch?v=...">
+
+            <!-- Quality selection goes HERE, still inside .modal-content -->
+            <div class="quality-group2" id="qualityGroup2" style="display:flex; margin-bottom:18px;">
+                <label for="videoQuality">Quality</label>
+                <select id="videoQuality">
+                    <option value="1080p">1080p (Full HD)</option>
+                    <option value="720p">720p (HD)</option>
+                    <option value="480p">480p</option>
+                    <option value="360p">360p</option>
+                    <option value="240p">240p</option>
+                    <option value="144p">144p</option>
+                </select>
+            </div>
+            <button class="playlist-download-btn" disabled>Download</button>
+        </div>
+    </div>
+
+    <script src="event_lestner.js"></script>
+</body>
+
+</html>
