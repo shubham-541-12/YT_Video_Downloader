@@ -1,3 +1,13 @@
+@media (max-width: 600px) {
+  .Button-Container {
+    flex-direction: column; /* Stacks buttons vertically */
+    gap: 20px; /* Adjusts the spacing between buttons */
+  }
+  .custom-button, .custom-button2 {
+    width: 300px; /* Maintains fixed width */
+    max-width: 100%; /* Ensures no overflow on very small screens */
+  }
+}
 body {
   background-image: url('original.jpg');
   background-size: cover;
@@ -152,3 +162,4 @@ input[type="text"] {
   background: #29275a;
   color: #fff;
 }
+
