@@ -115,7 +115,7 @@ export default function VideoDownloader() {
           <button
             onClick={handleFetch}
             disabled={isLoading}
-            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-red-500 to-orange-500 text-white font-semibold hover:opacity-90 transition-all disabled:opacity-50 w-full sm:w-auto justify-center"
+            className="flex cursor-pointer active:scale-95 items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-red-500 to-orange-500 text-white font-semibold hover:opacity-90 transition-all disabled:opacity-50 w-full sm:w-auto justify-center"
           >
             <Search className="w-5 h-5" />
             Fetch Qualities
